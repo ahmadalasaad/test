@@ -43,13 +43,33 @@ export class Utilities {
         "views": 7070
         };
         
-        // getSizes(position) {
-        //     return cy.window().then((win) => {
-        //         this.win = win;
-        //         return win.fbsads.getSizes(position);
-        //     });
-        // }
-    
+        
+        getAdSlots() {
+           return  cy.window().then((win) => {
+                return win.fbsads.adSlots;
+            });
+        }
+        getTargetMap(slotId) {
+          return  cy.window().then((win) => {
+               return win.fbsads.adSlots.get(slotId).getTargetingMap();
+           });
+       }
+
+       allPropTestInAds (opj) {
+        for (const prop in opj) {
+            cy.window().then((win)=>{
+           expect(win.fbsads.adSlots.get(opj.slotId[0]).getTargetingMap()[prop]).to.deep.equal(opj[prop]);
+        });
+          }
+    }
+
+    allPropTestInDataLayer (opj) {
+        for (const prop in opj) {
+            cy.window().then((win)=>{
+        //    expect(win.fbsads.adSlots.get(opj.slotId[0]).getTargetingMap()[prop]).to.deep.equal(opj[prop]);
+        });
+          }
+    }
 
 }
 export const utilities = new Utilities();

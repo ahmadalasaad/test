@@ -1,49 +1,154 @@
-const ads=[
+const ads= [
     {
-       slotId: "top",
-       sizes: [[728, 90], [970, 66], [970, 250], [970, 90], [7, 1], [7, 2], [1, 1], 'fluid']
-
+        pos: ['top'],
+        slotId: ['top'],
+        hero: ["true"],
+        topx: ['0' ],
     },
-   {
-       slotId:"topx-1",
-	   sizes: [[728, 90], [970, 66], [970, 250], [970, 90], [1, 1], 'fluid']
-
+    {
+        pos: ['topx'],
+        slotId: ['topx-1'],
+        topx: ['1'],
     },
-   {
-       slotId:"topx-2",
-       sizes: [[728, 90], [970, 66], [970, 250], [970, 90], [1, 1], 'fluid']
+    {
+        pos: ['topx'],
+        slotId: ['topx-2'],
+        topx: ['2'],
     },
-   {
-       slotId:"topx-3",
-       sizes: [[728, 90], [970, 66], [970, 250], [970, 90], [1, 1], 'fluid']
+       
+    {
+        pos: ['topx'],
+        slotId: ['topx-3'],
+        topx: ['3'],
     },
-   {
-    slotId: ['ntv-home'],
-    sizes: [[2, 3], [1, 1], 'fluid']
+    {
+        pos: ["ntv-home"],
+        slotId: ["ntv-home"],
+        strnativekey: ["QLWstPVbbpcwuyqK5ijhxZvL"]
+    },
+    {
+    pos: ['ntv-deskchannel'],
+    slotId: ['ntv-deskchannel-1'],
+    strnativekey: ['e5tSBXbDmvyVwXbVB7dymzCc'],
+    'ntv-deskchannel': ['1'],
+    'ntv-channel': ['money']
 },
-   {
-       slotId:"ntv-deskchannel-1",
-	   sizes: [[2, 3], [1, 1], 'fluid']
-    },
-   {
-       slotId:"ntv-deskchannel-2",
-	   sizes: [[2, 3], [1, 1], 'fluid']
-
-    },
-   {
-       slotId:"ntv-deskchannel-3",
-       sizes: [[2, 3], [1, 1], 'fluid']
-    },
-   {
-       slotId:"ntv-deskchannel-4",
-	   sizes: [[2, 3], [1, 1], 'fluid']
-
-    },
-   {
-       slotId:"ntv-deskchannel-5",
-       sizes: [[2, 3], [1, 1], 'fluid']
-    }
+{
+    pos: ['ntv-deskchannel'],
+    slotId: ['ntv-deskchannel-2'],
+    strnativekey: ['e5tSBXbDmvyVwXbVB7dymzCc'],
+    'ntv-deskchannel': ['2'],
+    'ntv-channel': ['innovation'],
+},
+{
+    pos: ['ntv-deskchannel'],
+    slotId: ['ntv-deskchannel-3'],
+    strnativekey: ['e5tSBXbDmvyVwXbVB7dymzCc'],
+    'ntv-deskchannel': ['3'],
+    'ntv-channel': ['lifestyle'],
+},
+{
+    pos: ['ntv-deskchannel'],
+    slotId: ['ntv-deskchannel-4'],
+    strnativekey: ['e5tSBXbDmvyVwXbVB7dymzCc'],
+    'ntv-deskchannel': ['4'],
+    'ntv-channel': ['billionaires'],
+},
+{
+    pos: ['ntv-deskchannel'],
+    slotId: ['ntv-deskchannel-5'],
+    strnativekey: ['e5tSBXbDmvyVwXbVB7dymzCc'],
+    'ntv-deskchannel': ['5'],
+    'ntv-channel': ['leadership'],
+},
 ]
+const dataLayer= {
+    DFPLineItemID: 'none',
+    DFPZone: 'home',
+    adBlockerDetection: undefined,
+    author: 'none',
+    bertie: 'false',
+    bertieBadgeSlugs: 'none',
+    blogType: 'none',
+    brandVoice: 'none',
+    brandVoiceLive: undefined,
+    bvCategory: [],
+    bvContentSource: 'none',
+    bvLeftRailHeadline: 'none',
+    bvProgramType: 'none',
+    categories: 'none',
+    cbSections: '',
+    cbPath: '/home_usa/',
+    channel: 'home,money,business,innovation,leadership',
+    channelNames: 'none',
+    coAuthor: 'none',
+    coAuthorControl: undefined,
+    contribActive: 'none',
+    contribDivision: 'none',
+    contribType: 'none',
+    coreBrands: 'none',
+    customPage: 'none',
+    description: '',
+    edit: 'none',
+    fastAt: '',
+    fastAu: '',
+    fastCh: '',
+    fastI: '',
+    fastN: '',
+    fastPt: '',
+    fastRe: `${Cypress.config('baseUrl')}__/`,
+    fastSe: '',
+    firebaseId: '',
+    gamZone: 'none',
+    hashtags: 'none',
+    heroImage: 'none',
+    imageCount: 'none',
+    insights: 'none',
+    isChina: 'false',
+    isEurope: 'false',
+    leftRail: undefined,
+    login: 'false',
+    naturalID: 'none',
+    newsKeywords: 'none',
+    nonBVLeftRailAd: 'none',
+    pageNumber: 'none',
+    pageTotal: 'none',
+    pageType: 'home',
+    paidContentBrand: 'none',
+    paidContentType: 'none',
+    paragraphs: 'none',
+    premiumProfiles: 'none',
+    primaryChannel: 'home',
+    primarySection: 'none',
+    publicCompany: 'none',
+    publishHour: 'none',
+    published: 'none',
+    recircUnit: 'none',
+    referrer: `${Cypress.config('baseUrl')}__/`,
+    salesforce: undefined,
+    section: 'none',
+    sectionNames: 'none',
+    seniorContributor: 'none',
+    signedIn: 'not signed-in',
+    site: 'none',
+    slot: 'none',
+    stockTicker: 'none',
+    isRetracted: false,
+    entitySegments: 'none',
+    isSponsored: false,
+    streamPosition: 'none',
+    templateType: 'none',
+    templateSubType: 'none',
+    trendingHashtags: 'none',
+    updateDate: 'none',
+    updateHour: 'none',
+    version: '',
+    videoPlacement: 'none',
+    weekdayPublish: 'none',
+    wordCount: 'none',
+    testName: '',
+    testVariant: '',
+}
 module.exports={
     ads
 }
