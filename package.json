@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "./node_modules/.bin/cypress open --env search_bar=bag",
-    "cy:run": "./node_modules/.bin/cypress run --env search_bar=bag --spec 'cypress/integration/sample_spec.js'"
+    "cy:run": "./node_modules/.bin/cypress run --env search_bar=bag --spec 'cypress/integration/sample_spec.js'",
+    "cy:open-mob": "./node_modules/.bin/cypress open --config viewportWidth=550,viewportHeight=750",
+
   },
   "author": "",
   "license": "ISC",
